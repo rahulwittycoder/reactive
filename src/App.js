@@ -1,14 +1,14 @@
 import Expenses from './components/Expenses/Expenses';
 import React, { useState, useEffect } from 'react';
-import { ReactDOM } from 'react';
 import NewExpense from './components/Expenses/NewExpense/NewExpense';
-import axios from 'axios';
+//import axios from 'axios';
+import ErrorCard from './components/UI/ErrorCard';
 function App()
 {
   const url = 'http://localhost:5000/record/add';
   const [expenses, setExpenses] = useState('');
   
-  useEffect(()=>async () => { await fetch('http://localhost:5000/record')
+  useEffect(() => { fetch('http://localhost:5000/record')
       .then((response) => response.json())
       .then((data) => setExpenses(data));
   },[])
@@ -28,7 +28,7 @@ function App()
   return(
     <>
       <NewExpense onAddExpense={addExpenseHandler}/>
-      <Expenses item={expenses}/>
+      {expenses.length>0 ? <Expenses item={expenses}/> : <ErrorCard />}
     </>
   );
 }
