@@ -2,7 +2,7 @@
   "name": "reactive",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rahulwittycoder.github.io/etracker",
+  "homepage": "https://rahulwittycoder.github.io/reactive",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
