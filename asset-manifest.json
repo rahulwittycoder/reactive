@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reactive/static/css/main.2d280811.css",
+    "main.js": "/reactive/static/js/main.9a3cb2bf.js",
+    "index.html": "/reactive/index.html",
+    "main.2d280811.css.map": "/reactive/static/css/main.2d280811.css.map",
+    "main.9a3cb2bf.js.map": "/reactive/static/js/main.9a3cb2bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d280811.css",
+    "static/js/main.9a3cb2bf.js"
+  ]
+}
