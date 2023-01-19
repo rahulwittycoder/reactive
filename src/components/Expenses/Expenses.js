@@ -6,7 +6,7 @@ import ExpenseItem from './ExpenseItem';
 import Card from '../UI/Card';
 
 const Expenses = (props) => {
-    if(props.item.length==0)
+    if(props.item.length===0)
     {
         return <h1>Make your first Entry!</h1>
     }
